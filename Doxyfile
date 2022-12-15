@@ -1,0 +1,49 @@
+#---------------------------------------------------------------------------
+# Project related configuration options
+#---------------------------------------------------------------------------
+
+DOXYFILE_ENCODING      = UTF-8
+PROJECT_NAME           = "Panther"
+PROJECT_NUMBER         =
+PROJECT_BRIEF          =
+
+OUTPUT_DIRECTORY       = doc/
+IMAGE_PATH             = img/
+
+JAVADOC_AUTOBRIEF      = YES
+JAVADOC_BANNER         = NO
+
+#---------------------------------------------------------------------------
+# Build related configuration options
+#---------------------------------------------------------------------------
+
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+
+INTERNAL_DOCS          = NO
+
+LAYOUT_FILE            =
+
+#---------------------------------------------------------------------------
+# Configuration options related to the input files
+#---------------------------------------------------------------------------
+
+INPUT                  = lib/ include/ index.md
+FILE_PATTERNS          = *.cpp *.h *.md
+RECURSIVE              = NO
+
+USE_MDFILE_AS_MAINPAGE = index.md
+
+#---------------------------------------------------------------------------
+# Configuration options related to the HTML output
+#---------------------------------------------------------------------------
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+
+HTML_HEADER            =
+HTML_FOOTER            =
+HTML_EXTRA_STYLESHEET  =
+
+USE_MATHJAX            = YES
