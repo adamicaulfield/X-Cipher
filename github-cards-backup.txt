@@ -1,0 +1,49 @@
+Done:
+- P1 - Generate Stacked up structure of n*m
+- P1 - Convert all the stacked up structure data into binary
+- P1 - Create Label Structure for left matrix
+- P1 - Create Label Structure for right matrix
+- P1 - Generating Shards using the Encryptor
+- P2 - Perform Rotation for left matrix
+
+In progress
+- P2 - Switching last rows of every right matrix in stacked structure
+- P2 -  perform rotation for right matrix
+
+To do
+- M - method to perform rotation for left matrix
+- M - stacked version example in google slides
+- M - apply recovery method to this version
+- P2 - verify rotation is performed correctly
+
+Wish list
+- BNN ops
+- Two-party authentication protocol
+
+I've created 4 milestones and re-organized the project page so that everything is linked (cards-issues-milestones).
+
+Perhaps during our next meeting I can go into more detail on what I have done. Here's some brief points:
+- All tasks are created as a "Issue" in their respective milestone. Then added to the "To-Do" column under projects.
+- Whoever will work on that task will claim by assigning to themselves and move it into "In-progress"
+- One complete, that person will move to "Ready for Review" and assign to me, and if I am the one who moved it I will ask which of you is available to review my work
+- After review and the tasks is completed successfully, move to "Done" and close the issue. This will update the progress under the milestone as well.
+
+Milestones (can be found under Issues->Milestones):
+
+1. X-Code (X-Cipher) foundational base:
+- this regards the foundational code, all of the basic operations. 
+- All of these tasks are in the "Review" section and I will move these to "Done" after reviewing one more time.
+
+2. Enabling Multiples in X-Cipher
+- everything that involves enabling recovery for multiple stacked X-Code matrices.
+
+3. Two-party authentication and recovery protocol
+- One way to map the X-Cipher to a functionality
+- Data Owner (DO) and Server (S). DO has data, puts into X-Cipher structure (computes parity and encrypts), and sends to S. S has function to recompute the parity bits (MAC) from the encrypted data, and sends back to DO. DO verifies whether the data was corrupted.
+- This milestone marks completion of a prototype of this protocol
+
+4. BNN operations with data recovery
+- This regards enabling BNN operations over the X-Cipher structure.
+- Operations such as convolution filter
+- Will need to do more background research to determine other important operations.
+- Ultimate goal is to enable recovery at any point in BNN execution.
