@@ -3,9 +3,7 @@
 *.xml
 *.log
 docs/
-bin/
 Makefile
 Panther.cbp
 deps/
 deps/src/HElib/Makefile
-data/
